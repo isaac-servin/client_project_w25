@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = text/css href="html5reset.css">
+    <link rel="stylesheet" type = text/css href="style.css">
     <title>Student Success Portal</title>
 </head>
 <body>
 
+    <a href = "#main" class="skip-link">Skip to Main Content</a>
+
     <header>
-  <a href = "">Skip to Main Content</a>
-        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+  <div class="container">
+        <img src="images/UMSI_picture.jpeg" alt="UMSI North Quad">
+    </div>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
@@ -21,17 +26,17 @@
         <h1>Student Success Portal</h1>
 
     </header>
-    <main>
+    <main id="main">
         <section>
             <h2>Welcome to the UM Grad Success Navigator</h2>
             <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
             <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
-            <ol>
+            <ul>
                 <li>Academic Resources</li>
                 <li>Mental Health Resources</li>
                 <li>Support for Students with Families</li>
-                <li>Contact information</li>
-            </ol>
+                <li>Contact Information</li>
+            </ul>
         </section>
         <section>
             <h2>Physical Health</h2>
@@ -82,6 +87,9 @@
         <section id="life-outside-classroom">
             <h2>Life Outside the Classroom</h2>
             <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
+            <article>
+
+            </article>
             <ul>
                 <li><strong>Student Organizations:</strong> Join one of the many student organizations to connect with peers who share your interests and passions.</li>
                 <li><strong>Arts and Culture:</strong> Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
@@ -90,11 +98,13 @@
                 <li><strong>Housing and Dining:</strong> Find information on on-campus housing options and dining services to ensure a comfortable living experience.</li>
             </ul>
         </section>
+        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
         <!-- Content taken & modified from UMGPT with the prompt, "write me a webpage of intro content to help University of Michigan Master's students navigate different resources for being successful in grad school - this will include academic resources, physical health resources, mental health resources, support for life outside the classroom"
         UMGPT. (2024). UMGPT (August 29th version) [Large language model]. -->
     </main>
     <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-        </footer>
+        <p>Additional Student Resources | <a href="https://campusinfo.umich.edu/">Campus Info website</a>.</p>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    </footer>
 </body>
 </html>
