@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/UMSI_signature_vertical_informal_solidblue.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 2</title>
     <link rel="stylesheet" type="text/css" href="html5reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <a href = "#caps-main" class="skip-link">Skip to Main Content</a>
     <header>
         <a href = "index.html" class="skip-link">Skip to Main Content</a>
         <div class="container">
@@ -16,21 +18,21 @@
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Study Spaces</a></li>
-                <li><a href = "page_2.html">CAPS</a></li>
-                <li><a href = "page_3.html">Student Resources</a></li>
+                <li><a href = "study_spaces.html">Study Spaces</a></li>
+                <li><a href = "caps.html" class="caps">CAPS</a></li>
+                <li><a href = "student_resources.html">Student Resources</a></li>
             </ul>
             <h1>Counseling and Psycological services (CAPS)</h1>
         </nav>
         <h2>CAPS provides services for a variety of personalities, as well as workshops, group counseling, and private counseling, aided by up to date information on how to properly cater to each student's needs.</h2>
 
     </header>
-    <main class="page2">
+    <main id="caps-main" class="page2">
         
         <section>
             <h3>Contact Information</h3>
-            <p>Phone: 734-764-8312 (24hrs) Email: caps-uofm@umich.edu</p>
-            <p> Counseling and Psycological services | <a href=" https://caps.umich.edu/">University Health and Counseling</a></p>
+            <h4>Phone: 734-764-8312 (24hrs) Email: caps-uofm@umich.edu</h4>
+            <h4> Counseling and Psycological services | <a href=" https://caps.umich.edu/">University Health and Counseling</a></h4>
         </section>
         <section>
             <h3>Technology and Apps</h3>
@@ -50,7 +52,7 @@
             </figure>
             <h3>Professional Opportunities</h3>
             <h4>CAPS has a long history of collaborating with the nationally rated UM School of Social Work and the Office of Field Instruction to provide excellent field placements for MSW students.</h4>
-            <h5>Apply now to get involved by reviewing the <a href ="https://caps.umich.edu/article/qualifications-and-application-process">qualifications and application process</a></h5>
+            <h5>Apply now to get involved by reviewing the <a href ="https://caps.umich.edu/article/qualifications-and-application-process">qualifications and application process</a></h5>.
 
         </section>
         <section>
@@ -64,21 +66,35 @@
                 <h4>Group Counseling</h4>
                 <figure>
                 <img src="images/HD5A4552_0.jpg" width="250" alt="Group Counseling">
+                <figcaption>Group counseling is a great way to connect with other students and learn new skills. CAPS offers a variety of group counseling options, including support groups, therapy groups, and more.</figcaption>
                 </figure>
-                <p>Group counseling is a great way to connect with other students and learn new skills. CAPS offers a variety of group counseling options, including support groups, therapy groups, and more.</p>
                 </section>
                 <section>
                 <h4>Individual Counseling</h4>
                 <figure>
                     <img src="images/pxl_20200921_192303601.jpg" width="250" alt="Individual Counseling">
+                    <figcaption>Individual counseling is a great way to get personalized support for your mental health concerns. CAPS offers individual counseling to all students, and appointments can be scheduled online or by phone.</figcaption>
                 </figure>
-                <p>Individual counseling is a great way to get personalized support for your mental health concerns. CAPS offers individual counseling to all students, and appointments can be scheduled online or by phone.</p>
                 </section>
         </section>
     </main>
     <footer>
-        <p> Additonal Student Resources | <a href="https://campusinfo.umich.edu/">Campus Info website</a>.</p>
+        <p>Additional Student Resources | <a href="https://campusinfo.umich.edu/">Campus Info website</a>.</p>
+        <p>&copy; Copyright <span id="year"></span>, All Rights Reserved.</p>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
 </body>
 </html>
