@@ -1026,5 +1026,8 @@ nav ul li {
 .page3 > section p{
     text-align: center;
 }
+#last h1{
+  color: black;
+}
 
 }
