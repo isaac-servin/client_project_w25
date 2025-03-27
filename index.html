@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/UMSI_signature_vertical_informal_solidblue.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="html5reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -17,10 +18,10 @@
         </div>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="page_1.html">Study Spaces</a></li>
-                <li><a href="page_2.html">CAPS</a></li>
-                <li><a href="page_3.html">Student Resources</a></li>
+                <li><a href="index.html" class="home">Home</a></li>
+                <li><a href="study_spaces.html">Study Spaces</a></li>
+                <li><a href="caps.html">CAPS</a></li>
+                <li><a href="student_resources.html">Student Resources</a></li>
             </ul>
             <h1>Student Success Portal</h1>
         </nav>
@@ -110,8 +111,22 @@
     </main>
     <footer>
         <p>Additional Student Resources | <a href="https://campusinfo.umich.edu/">Campus Info website</a>.</p>
+        <p>&copy; Copyright <span id="year"></span>, All Rights Reserved.</p>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
     </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+        window.addEventListener("scroll", () => {
+            const header = document.querySelector("header");
+            if (window.scrollY > 100) { 
+              header.classList.add("scrolled");
+            } else {
+              header.classList.remove("scrolled");
+            }
+          });
+    </script>
 
 </body>
 </html>
