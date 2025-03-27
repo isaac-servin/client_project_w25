@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/UMSI_signature_vertical_informal_solidblue.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page 3</title>
     <link rel="stylesheet" type="text/css" href="html5reset.css">
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+    <a href = "#student-resource" class="skip-link">Skip to Main Content</a>
     <header>
         <a href = "index.html" class="skip-link">Skip to Main Content</a>
         <div class="container">
@@ -16,21 +18,25 @@
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Study Spaces</a></li>
-                <li><a href = "page_2.html">CAPS</a></li>
-                <li><a href = "page_3.html">Student Resources</a></li>
+                <li><a href = "study_spaces.html">Study Spaces</a></li>
+                <li><a href = "caps.html">CAPS</a></li>
+                <li><a href = "student_resources.html" class="resources">Student Resources</a></li>
             </ul>
             <h1>Student Life: Basic Needs</h1>
         </nav>
         <h2>At the University of Michigan, we understand that students have basic needs that must be met in order to be successful. Here are some resources to help you meet those needs:</h2>
     </header>  
-<main class="page3">
+<main id="student-resource" class="page3">
+    <section>
     <figure>
             <img src="images2/FoodGatherers_COVID-300x172.webp" width="250" height="357" alt="Food Gatherers logo">
     </figure>
+    </section>
+    <section>
     <figure>
-        <img src="images2/FG-2-760x570.jpg" width = "425" height="357" alt="Food gathers logo part two">
+        <img src="images2/FG-2-760x570.jpg" width = "425" height="357" alt="Food Gatherers Team">
     </figure>
+    </section>
     <section>
     <h3>Food: Food Gatherers of Ann Arbor</h3>
     <p>Food Gatherers is a non-profit organization that provides food to those in need. They offer a variety of programs to help students access healthy food, including food pantries, meal programs, and more.</p>
@@ -45,7 +51,7 @@
     <section>
     <h3>Housing: Resources for Family Housing </h3>
     <figure>
-        <img src="images2/060513_NEWS_GradHousing_MRM_06_display.jpeg" width="250" alt="Northwood apartment kitchen">
+        <img src="images2/060513_NEWS_GradHousing_MRM_06_display.jpeg" width="250" alt="Northwood apartment kitchen" />
     </figure>
     <figure>
         <img src = "images/nwii-pd-1.jpg" width = "250" alt = "Northwood exterior">
@@ -71,7 +77,22 @@ Food Gatherers Warehouse 1 Carrot Way Ann Arbor, MI 48105 Phone: 734-761-2796 Fa
 </main>
 <footer>
     <p>Additional Student Resources | <a href="https://campusinfo.umich.edu/">Campus Info website</a>.</p>
+    <p>&copy; Copyright <span id="year"></span>, All Rights Reserved.</p>
     <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
 </footer>
+<script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+</script>
+<script>
+    window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100){
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+    
+</script>
 </body>
 </html>
