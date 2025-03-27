@@ -2,33 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" type="image/x-icon" href="images/UMSI_signature_vertical_informal_solidblue.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="html5reset.css">
     <link rel="stylesheet" type ="text/css" href="style.css">
     <title>Page 1</title>
 </head>
 <body>
-
+    <a href = "#study-main" class="skip-link">Skip to Main Content</a>
     <header>
-            <a href = "index.html" class="skip-link">Skip to Main Content</a>
             <div class="container">
                 <img src="images/UMSI_picture.jpeg" alt="UMSI North Quad">
             </div>
         <nav>
             <ul>
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Study Spaces</a></li>
-                <li><a href = "page_2.html">CAPS</a></li>
-                <li><a href = "page_3.html">Student Resources</a></li>
+                <li><a href = "study_spaces.html" class="study">Study Spaces</a></li>
+                <li><a href = "caps.html">CAPS</a></li>
+                <li><a href = "student_resources.html">Student Resources</a></li>
             </ul>
         </nav>
         <h1>Study Spaces on Campus</h1>
         <h2>The University of Michigan campus in Ann Arbor spans around 3,070 acres, encompassing five main areas: Central Campus, East Campus, North Campus, Medical Campus, and South Campus. Here are some popular student study spots.</h2>
 
     </header>
-    <main class="page1">
+    <main id ="study-main" class="page1">
         <section>
-            <h2>UM offers several amenities to meet the needs and preferences of students wanting to study in their preferred environment.</h2>
+            <h3>UM offers several amenities to meet the needs and preferences of students wanting to study in their preferred environment.</h3>
         </section>
         <section>
             <h3>It can be easy to get lost in a big campus, reference the <a href="https://campusinfo.umich.edu/campusmap">Campus Guide</a> for additional assistance.</h3>
@@ -52,26 +52,39 @@
         <section>
             <h3>Ross School of Business Davidson Winter Garden</h3>
             <figure>
-                <img src="images4/davidson%20winter%20garden.jpg" width="250" alt="Students studying in Ross">
+                <img src="images4/davidson winter garden.jpg" width="250" alt="Students studying in Ross">
                 <figcaption>Students studying in the Davidson Winter Garden</figcaption>
             </figure>
             The Davidson Winter Garden is a section in the Ross School of Business where hundreds of students of different academic backgrounds study and conversate. The Winter Gardens are open from 7am - 6pm, and offer great study enviornments for collaborative learners.
         </section>
 
         <section>
-            <h2>Law Library Reading Room</h2>
+            <h3>Law Library Reading Room</h3>
             <figure>
-                <img src="images4/law%20library.jpg" width="250" alt="Students studying in the Law Library">
+                <img src="images4/law library.jpg" width="250" alt="Students studying in the Law Library">
                 <figcaption>Students studying in the Law Library Reading Room</figcaption>
             </figure>
             The Law Library Reading Room is a popular study spot for law students and students of other academic backgrounds. The law library utlizes cork floors to increase the silence levels in the reading room. The Reading Room is open from 8am - 9pm and offers a quiet study environment for students that prefer to study in silence.
         </section>
     </main>
     <footer>
-        <p> Additional Student Resources | <a href="https://campusinfo.umich.edu/">Campus Info website</a>.</p>
+        <p>Additional Student Resources | <a href="https://campusinfo.umich.edu/">Campus Info website</a>.</p>
+        <p>&copy; Copyright <span id="year"></span>, All Rights Reserved.</p>
         <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
     </footer>
-    
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <script>
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) { 
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+    </script>
 </body>
 
 </html>
