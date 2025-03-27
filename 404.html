@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="html5reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Page Not Found</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/UMSI_picture.jpeg" alt="UMSI North Quad">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="study_spaces.html">Study Spaces</a></li>
+                <li><a href="caps.html">CAPS</a></li>
+                <li><a href="student_resources.html">Student Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>404 - Page Not Found</h1>
+        <p>Sorry, the page you are looking for does not exist.</p>
+        <p>Please check the URL or return to the <a href="index.html">home page</a>.</p>
+    </main>
+    <footer>
+        <p>Additional Student Resources | <a href="https://campusinfo.umich.edu/">Campus Info website</a>.</p>
+        <p>&copy; Copyright <span id="year"></span>, All Rights Reserved.</p>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
+    </footer>
+    <script>        
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+</body>
+</html>
